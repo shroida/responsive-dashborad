@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class AllExpensessItemHeader extends StatelessWidget {
-  const AllExpensessItemHeader(
+class ExpensessCardItemHeader extends StatelessWidget {
+  const ExpensessCardItemHeader(
       {super.key, required this.image, this.imageBackground, this.imageColor});
 
   final String image;

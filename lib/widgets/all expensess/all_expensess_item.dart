@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/models/all_expensess_item_model.dart';
 import 'package:responsive_dashboard/utlis/app_styles.dart';
-import 'package:responsive_dashboard/widgets/all%20expensess/all_expensess_item_header.dart';
+import 'package:responsive_dashboard/widgets/all%20expensess/expensess_card_item_header.dart';
 
 class AllExpensessItem extends StatelessWidget {
   const AllExpensessItem(
@@ -39,7 +39,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AllExpensessItemHeader(
+          ExpensessCardItemHeader(
             image: itemModel.image,
           ),
           const SizedBox(
@@ -100,7 +100,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AllExpensessItemHeader(
+          ExpensessCardItemHeader(
             imageBackground: Colors.white.withOpacity(0.10000000149011612),
             imageColor: Colors.white,
             image: itemModel.image,
