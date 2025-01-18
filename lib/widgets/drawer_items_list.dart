@@ -34,7 +34,6 @@ class _DrawerItemsListState extends State<DrawerItemsList> {
             if (activeIndex != index) {
               setState(() {
                 activeIndex = index;
-                print(activeIndex);
               });
             }
           },
