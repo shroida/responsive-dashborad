@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/views/adaptive_layout.dart';
+import 'package:responsive_dashboard/widgets/adaptive_layout.dart';
 import 'package:responsive_dashboard/widgets/dashboard_desktop_layout.dart';
 
 class DashboardView extends StatelessWidget {

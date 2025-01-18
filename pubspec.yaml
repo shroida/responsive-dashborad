@@ -46,6 +46,7 @@ flutter:
   assets:
   - assets/images/avatar_1.svg
   - assets/images/avatar_2.svg
+  - assets/images/avatar_3.svg
   - assets/images/balance.svg
   - assets/images/card_background.png
   - assets/images/dashboard.svg
