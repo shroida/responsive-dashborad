@@ -9,27 +9,27 @@ class DashboardDesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color:Color(0xffF7F9FA),
-      child: const Row(children: [
-        Expanded(child: CustomDrawer()),
-        SizedBox(
-          width: 32,
-        ),
-        Expanded(
-          flex: 2,
-          child: Expanded(
+      color: const Color(0xffF7F9FA),
+      child: const Row(
+        children: [
+          Expanded(child: CustomDrawer()),
+          SizedBox(
+            width: 32,
+          ),
+          Expanded(
+            flex: 2,
             child: Column(
               children: [
                 AllExpenses(),
-                QuickInvoice()
+                QuickInvoice(),
               ],
             ),
           ),
-        ),
-        Expanded(
-          child: SizedBox(),
-        )
-      ]),
+          Expanded(
+            child: SizedBox(),
+          ),
+        ],
+      ),
     );
   }
 }
