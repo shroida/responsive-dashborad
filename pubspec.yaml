@@ -32,14 +32,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
+  flutter_svg: ^2.0.17
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
@@ -48,7 +43,20 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
 flutter:
-
+  assets:
+  - assets/images/avatar_1.svg
+  - assets/images/avatar_2.svg
+  - assets/images/balance.svg
+  - assets/images/card_background.png
+  - assets/images/dashboard.svg
+  - assets/images/gallery.svg
+  - assets/images/income.svg
+  - assets/images/logout.svg
+  - assets/images/my_investments.svg
+  - assets/images/my_transctions.svg
+  - assets/images/settings.svg
+  - assets/images/statistics.svg
+  - assets/images/wallet_account.svg
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
