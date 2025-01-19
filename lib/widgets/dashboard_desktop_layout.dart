@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/Left%20section/my_card.dart';
+import 'package:responsive_dashboard/widgets/Left%20section/pages_cards.dart';
 import 'package:responsive_dashboard/widgets/drawer/custom_drawer.dart';
 import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/all_expensess_invoice_section.dart';
 
@@ -23,8 +23,9 @@ class DashboardDesktopLayout extends StatelessWidget {
           SizedBox(
             width: 24,
           ),
-          Expanded(
-            child: MyCard(),
+          Expanded(child: PagesCards()),
+          SizedBox(
+            width: 24,
           ),
         ],
       ),

@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.8
+  expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
   flutter_bloc: ^9.0.0
@@ -44,27 +45,26 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-  - assets/images/avatar_1.svg
-  - assets/images/avatar_2.svg
-  - assets/images/avatar_3.svg
-  - assets/images/balance.svg
-  - assets/images/expenses.svg
-  - assets/images/card_background.png
-  - assets/images/dashboard.svg
-  - assets/images/gallery.svg
-  - assets/images/income.svg
-  - assets/images/logout.svg
-  - assets/images/my_investments.svg
-  - assets/images/my_transctions.svg
-  - assets/images/settings.svg
-  - assets/images/statistics.svg
-  - assets/images/wallet_account.svg
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+    - assets/images/avatar_1.svg
+    - assets/images/avatar_2.svg
+    - assets/images/avatar_3.svg
+    - assets/images/balance.svg
+    - assets/images/expenses.svg
+    - assets/images/card_background.png
+    - assets/images/dashboard.svg
+    - assets/images/gallery.svg
+    - assets/images/income.svg
+    - assets/images/logout.svg
+    - assets/images/my_investments.svg
+    - assets/images/my_transctions.svg
+    - assets/images/settings.svg
+    - assets/images/statistics.svg
+    - assets/images/wallet_account.svg
+    # The following line ensures that the Material Icons font is
+    # included with your application, so that you can use the icons in
+    # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
