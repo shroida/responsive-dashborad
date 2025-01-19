@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/Left%20section/card_transactions_left.dart';
+import 'package:responsive_dashboard/widgets/Left%20section/card_transactions_income.dart';
 import 'package:responsive_dashboard/widgets/drawer/custom_drawer.dart';
 import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/all_expensess_invoice_section.dart';
 
@@ -10,21 +10,21 @@ class DashboardDesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xffF7F9FA),
-      child: Row(
+      child: const Row(
         children: [
-          const Expanded(child: CustomDrawer()),
-          const SizedBox(
+          Expanded(child: CustomDrawer()),
+          SizedBox(
             width: 32,
           ),
-          const Expanded(
+          Expanded(
             flex: 2,
             child: AllExpensessInvoiceSection(),
           ),
-          const SizedBox(
+          SizedBox(
             width: 32,
           ),
-          Expanded(child: CardTransactionsLeft()),
-          const SizedBox(
+          Expanded(child: CardTransactionsIncome()),
+          SizedBox(
             width: 32,
           ),
         ],
