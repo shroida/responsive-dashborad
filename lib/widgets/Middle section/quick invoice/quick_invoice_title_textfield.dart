@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/title_text_field.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/title_text_field.dart';
 
 class QuickInvoiceTitleTextfield extends StatelessWidget {
   const QuickInvoiceTitleTextfield({super.key});

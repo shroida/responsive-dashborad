@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/all%20expensess/all_expensess.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/custom_button.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/quick_invoice.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/all%20expensess/all_expensess.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/custom_button.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/quick_invoice.dart';
 
 class AllExpensessInvoiceSection extends StatelessWidget {
   const AllExpensessInvoiceSection({

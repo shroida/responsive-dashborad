@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/models/all_expensess_item_model.dart';
 import 'package:responsive_dashboard/utlis/app_styles.dart';
-import 'package:responsive_dashboard/widgets/all%20expensess/expensess_card_item_header.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/all%20expensess/expensess_card_item_header.dart';
 
 class AllExpensessItem extends StatelessWidget {
   const AllExpensessItem(

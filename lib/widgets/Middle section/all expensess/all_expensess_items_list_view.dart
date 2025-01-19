@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/models/all_expensess_item_model.dart';
 import 'package:responsive_dashboard/utlis/app_images.dart';
-import 'package:responsive_dashboard/widgets/all%20expensess/all_expensess_item.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/all%20expensess/all_expensess_item.dart';
 
 class AllExpensessItemsListView extends StatefulWidget {
   const AllExpensessItemsListView({super.key});

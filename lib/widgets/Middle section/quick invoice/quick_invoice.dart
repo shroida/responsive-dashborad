@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/widgets/all%20expensess/custom_bg_container.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/latest_transactions.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/quick_invoice_header.dart';
-import 'package:responsive_dashboard/widgets/quick%20invoice/quick_invoice_title_textfield.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/all%20expensess/custom_bg_container.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/latest_transactions.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/quick_invoice_header.dart';
+import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/quick_invoice_title_textfield.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
