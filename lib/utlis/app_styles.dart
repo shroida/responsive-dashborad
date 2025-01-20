@@ -96,12 +96,15 @@ abstract class AppStyles {
 // sacleFactor
 // responsive font size
 // (min , max) fontsize
-double getResponsiveFontSize(context, {required double fontSize}) {
+double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
-  double lowerLimit = fontSize * .8;
-  double upperLimit = fontSize * 1.2;
+  // Adjust limits for mobile devices
+  double lowerLimit =
+      fontSize * (MediaQuery.sizeOf(context).width < 700 ? 0.6 : 0.8);
+  double upperLimit =
+      fontSize * (MediaQuery.sizeOf(context).width < 700 ? 1.1 : 0.8);
 
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
@@ -114,10 +117,13 @@ double getScaleFactor(context) {
 
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
+    print('dsdddddddddddddddddddddddddddd');
+    print('dsddddddddddd$width');
+    print(width/550);
     return width / 550;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    return width / 5000;
   } else {
-    return width / 1920;
+    return width / 5000;
   }
 }

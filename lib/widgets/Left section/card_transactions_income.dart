@@ -7,17 +7,17 @@ class CardTransactionsIncome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         SizedBox(
-          height: 40,
+          height: MediaQuery.sizeOf(context).width > 1300 ? 40 : 0,
         ),
-        Expanded(flex: 2, child: CardTransactionsLeft()),
-        SizedBox(
+        const Expanded(flex: 2, child: CardTransactionsLeft()),
+        const SizedBox(
           height: 24,
         ),
-        Expanded(child: IncomeSection()),
-        SizedBox(
+        const Expanded(child: IncomeSection()),
+        const SizedBox(
           height: 24,
         ),
       ],

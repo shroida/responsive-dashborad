@@ -3,7 +3,7 @@ import 'package:responsive_dashboard/widgets/Left%20section/card_transactions_in
 import 'package:responsive_dashboard/widgets/Middle%20section/quick%20invoice/all_expensess_invoice_section.dart';
 
 class DashboardTabletLayout extends StatelessWidget {
-  const DashboardTabletLayout({Key? key}) : super(key: key);
+  const DashboardTabletLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +12,13 @@ class DashboardTabletLayout extends StatelessWidget {
       child: const Row(
         children: [
           SizedBox(
-            width: 32,
+            width: 20,
           ),
           Expanded(
-            flex: 2,
             child: AllExpensessInvoiceSection(),
           ),
           SizedBox(
-            width: 32,
+            width: 20,
           ),
           Expanded(child: CardTransactionsIncome()),
           SizedBox(

@@ -10,30 +10,32 @@ class AllExpensessInvoiceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    double screenWidth = MediaQuery.sizeOf(context).width;
+
+    return Column(
       children: [
         SizedBox(
-          height: 40,
+          height: screenWidth < 1300 ? 0 : 40,
         ),
-        AllExpenses(),
+        const AllExpenses(),
         SizedBox(
-          height: 24,
+          height: screenWidth < 1300 ? 10 : 24,
         ),
-        QuickInvoice(),
+        const QuickInvoice(),
         Row(
           children: [
-            Expanded(
+            const Expanded(
               child: CustomButton(
                 bgColor: Colors.transparent,
                 textColor: Color(0xff4db7f2),
               ),
             ),
             SizedBox(
-              width: 24,
+              width: screenWidth < 1300 ? 10 : 24,
             ),
-            Expanded(child: CustomButton()),
+            const Expanded(child: CustomButton()),
           ],
-        )
+        ),
       ],
     );
   }
