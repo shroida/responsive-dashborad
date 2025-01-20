@@ -10,10 +10,33 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.sizeOf(context).width;
     return Container(
       color: Colors.white,
       child: CustomScrollView(
         slivers: [
+          if (screenWidth < 1300)
+            SliverToBoxAdapter(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Text(
+                      'Menu',
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.close),
+                    onPressed: () {
+                      Navigator.of(context).pop(); // Close the drawer
+                    },
+                  ),
+                ],
+              ),
+            ),
           const SliverToBoxAdapter(
             child: UserInfo(
               image: Assets.imagesAvatar3,

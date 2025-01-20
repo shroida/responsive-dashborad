@@ -9,6 +9,9 @@ class CardTransactionsIncome extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
+        SizedBox(
+          height: 40,
+        ),
         Expanded(flex: 2, child: CardTransactionsLeft()),
         SizedBox(
           height: 24,
