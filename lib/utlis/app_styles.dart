@@ -93,14 +93,10 @@ abstract class AppStyles {
   }
 }
 
-// sacleFactor
-// responsive font size
-// (min , max) fontsize
 double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
-  // Adjust limits for mobile devices
   double lowerLimit =
       fontSize * (MediaQuery.sizeOf(context).width < 700 ? 0.6 : 0.8);
   double upperLimit =
@@ -110,16 +106,8 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 }
 
 double getScaleFactor(context) {
-  // var dispatcher = PlatformDispatcher.instance;
-  // var physicalWidth = dispatcher.views.first.physicalSize.width;
-  // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
-  // double width = physicalWidth / devicePixelRatio;
-
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tablet) {
-    print('dsdddddddddddddddddddddddddddd');
-    print('dsddddddddddd$width');
-    print(width/550);
     return width / 550;
   } else if (width < SizeConfig.desktop) {
     return width / 5000;
